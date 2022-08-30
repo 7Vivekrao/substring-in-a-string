@@ -1,0 +1,7 @@
+#This code helps to identify and count the number of time a given substring occurs in a given string 's'.
+count = 0
+s = 'abobnfoofbobobehejdgbofhrhr'
+for i in range(len(s)):   # 'i' stands for index of a character in the string.
+  if s[i-1:i+2] == 'bob':  
+     count = count + 1
+print("Number of times bob occurs is:" + str(count))
